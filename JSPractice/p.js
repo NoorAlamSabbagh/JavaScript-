@@ -54,7 +54,35 @@
 
 
 //IIFE
-var numbers = [1, 2, 3, 4, 5, ,6 ,7, 8]
-const value = numbers.filter<5;
-console.log(value);
+//IQ
+// var x = 50;
+// var m = {
+//     fun: function () { console.log(this.x) },
+//     fun1: () => { console.log(this.x) },
+//     x: 20
+// }
+// m.fun()
+// m.fun1()
 
+
+// var ans = m.fun;
+// var ofn1 = m.fun1;
+// ans();
+// ofn1();
+
+
+//
+var length = 20;
+
+function callback() {
+    console.log(this.length);
+}
+
+const obj = {
+    length: 10,
+    abc() {
+        arguments[0]();
+    },
+}
+
+obj.abc(callback, 1, 2, 3);
