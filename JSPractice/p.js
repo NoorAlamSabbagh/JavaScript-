@@ -72,17 +72,70 @@
 
 
 //
-var length = 20;
+// var length = 20;
 
-function callback() {
-    console.log(this.length);
-}
+// function callback() {
+//     console.log(this.length);
+// }
 
-const obj = {
-    length: 10,
-    abc() {
-        arguments[0]();
-    },
-}
+// const obj = {
+//     length: 10,
+//     abc() {
+//         arguments[0]();
+//     },
+// }
 
-obj.abc(callback, 1, 2, 3);
+// obj.abc(callback, 1, 2, 3);
+
+
+
+//
+// function printDateTime(){
+//     const now = new Date();
+//     console.log(now.toLocaleString());
+// }
+// setInterval(printDateTime, 1000);
+
+//
+// let date = new Date().getDay();
+// console.log(date);
+// function Time(){
+// if(date === 0){
+//     console.log("Sunday");
+// }
+// }
+
+
+//
+// let date = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+// console.log(date[new Date().getDay()])
+
+
+//
+// let arr = [1,1,1,2,2,3,3,3,5,5,6,7,7,7,8,8,8,9,9,9]
+// let un = [];
+// let res = arr.forEach((e,i)=> {
+//   if(!un.includes(e)){
+//     un.push(e)
+//   }
+// })
+
+// console.log(un)
+
+
+//
+// let arr = [1,2,3,1,4,2,5,6,2,4,5,7,9];
+// let freq = {};
+
+// for(let i = 0; i < arr.length; i++) {
+//   let num = arr[i];
+//   freq[num] = freq[num] ? freq[num] + 1 : 1;
+// }
+
+// console.log(freq);
+
+
+//
+
+
+
